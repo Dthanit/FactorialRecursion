@@ -1,13 +1,22 @@
+import java.util.Scanner;
 class FactorialRecursion
-{
-    public static long factorial(long n)
-      {
-        if (n<=4) return 4;
-        else return n*factorial(n-1);
+ {
+   public static void getCalculationfac()
+   {
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Calculation Factorial ");
+      System.out.print("Enter  n : ");
+      int result = 1;
+      int n = scan.nextInt(); 
+      for (int i = n; i >= 1; i--) 
+      { 
+        result *= i; 
       }
-    public static void main (String[] args)
-      {  
-        factorial(10);
-        System.out.println( "Sum Total of factorial is  "+factorial(10));
-      }
+         System.out.println("Result = " + result); 
+    }
+    public static void main(String[] args)
+    {
+      int n = 0;int result = 1;
+      getCalculationfac();
+    }
 }
